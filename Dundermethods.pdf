@@ -1,0 +1,35 @@
+| **Category**         | **Method**                                  | **Description / Usage**                           | **Example Trigger**        |
+| -------------------- | ------------------------------------------- | ------------------------------------------------- | -------------------------- |
+| **Object Lifecycle** | `__init__(self, …)`                         | Constructor method                                | `obj = ClassName()`        |
+|                      | `__del__(self)`                             | Destructor method (called when object is deleted) | `del obj`                  |
+| **String/Display**   | `__str__(self)`                             | Human-readable string (`print(obj)`)              | `str(obj)` or `print(obj)` |
+|                      | `__repr__(self)`                            | Official string, good for debugging               | `repr(obj)` or in console  |
+| **Length/Container** | `__len__(self)`                             | Return length                                     | `len(obj)`                 |
+|                      | `__getitem__(self, key)`                    | Get value at index/key                            | `obj[key]`                 |
+|                      | `__setitem__(self, key, value)`             | Set value at index/key                            | `obj[key] = value`         |
+|                      | `__delitem__(self, key)`                    | Delete item at index/key                          | `del obj[key]`             |
+|                      | `__contains__(self, item)`                  | Check for membership                              | `item in obj`              |
+| **Iteration**        | `__iter__(self)`                            | Return iterator object                            | `for x in obj:`            |
+|                      | `__next__(self)`                            | Return next item in iteration                     | `next(obj)`                |
+| **Arithmetic**       | `__add__(self, other)`                      | Addition operator                                 | `a + b`                    |
+|                      | `__sub__(self, other)`                      | Subtraction operator                              | `a - b`                    |
+|                      | `__mul__(self, other)`                      | Multiplication                                    | `a * b`                    |
+|                      | `__truediv__(self, other)`                  | Division                                          | `a / b`                    |
+|                      | `__floordiv__(self, other)`                 | Floor Division                                    | `a // b`                   |
+|                      | `__mod__(self, other)`                      | Modulo                                            | `a % b`                    |
+|                      | `__pow__(self, other)`                      | Power                                             | `a ** b`                   |
+| **Comparison**       | `__eq__(self, other)`                       | Equality check                                    | `a == b`                   |
+|                      | `__ne__(self, other)`                       | Not equal                                         | `a != b`                   |
+|                      | `__lt__(self, other)`                       | Less than                                         | `a < b`                    |
+|                      | `__le__(self, other)`                       | Less than or equal                                | `a <= b`                   |
+|                      | `__gt__(self, other)`                       | Greater than                                      | `a > b`                    |
+|                      | `__ge__(self, other)`                       | Greater than or equal                             | `a >= b`                   |
+| **Boolean/Logic**    | `__bool__(self)`                            | Truth value of object                             | `bool(obj)` or `if obj:`   |
+| **Context Managers** | `__enter__(self)`                           | Start of `with` block                             | `with obj:`                |
+|                      | `__exit__(self, exc_type, exc_val, exc_tb)` | End of `with` block                               | When exiting `with` block  |
+| **Callable Objects** | `__call__(self, …)`                         | Make object callable like a function              | `obj()`                    |
+| **Attribute Access** | `__getattr__(self, name)`                   | Called when attribute not found                   | `obj.some_attr`            |
+|                      | `__setattr__(self, name, value)`            | Assign attribute                                  | `obj.attr = val`           |
+|                      | `__delattr__(self, name)`                   | Delete attribute                                  | `del obj.attr`             |
+| **Class Behavior**   | `__class__`                                 | Refers to the class the object was created from   | `obj.__class__`            |
+|                      | `__dict__`                                  | Object’s attribute dictionary                     | `obj.__dict__`             |
